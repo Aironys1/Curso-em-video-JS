@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JavaScript #04</title>
+    <style>
+        h1{
+            color:#e9e1e1;
+            text-align: center;
+            font-size: 2rem;
+            background-color: black;
+            padding: 20px;
+        }
+        p{
+            color: brown;
+            font-size:1.2rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color:#6f87d1;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Curso JavaScript #06</h1>
+
+    <script>
+
+    var nome = prompt("Nome do Aluno");
+    var nota1 = Number(prompt(nome+" Digite sua primeira nota:"));
+    var nota2 = Number(prompt(nome+" Digite sua segunda nota:"));
+    var nota3 = Number(prompt(nome+" Digite sua terceira nota:"));
+    var media = ((nota1 + nota2 + nota3)/3);
+    
+
+    if(media <=4){
+        alert(`${nome} você foi reprovado com a média: ` + media);
+    }else if (media <=6){
+        alert("O aluno vai para a recuperação "+ media);
+        
+    }else if (media <=10){
+        alert("PARABÉNS, VOCÊ FOI APROVADO!!! : ) "+ media);
+    }else {
+        alert("Error:  Valor inválido")
+    }
+
+    
+        
+    </script>
+</body>
+</html>
